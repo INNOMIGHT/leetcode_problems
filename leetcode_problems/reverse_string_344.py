@@ -14,3 +14,10 @@ class Solution:
             s[i] = s[-1 - i]
             s[-1 - i] = tmp
         return s
+
+        # Another Solution With 2 Pointers -
+        # p, q = 0, len(s)-1
+        # while p<q:
+        #     s[p],s[q] = s[q],s[p]
+        #     p+=1
+        #     q-=1
