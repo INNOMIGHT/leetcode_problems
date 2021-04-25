@@ -48,9 +48,12 @@ def cat_cycle():
 
 
             if arr[cat_a_place] == arr[cat_b_place]:
-                cat_a = arr[cat_a_place]
-                cat_b = arr[cat_b_place+1]
-                cat_b_place = cat_b_place + 1
+                if cat_b_place >= n:
+                    cat_b_place = 1
+                else:
+                    cat_a = arr[cat_a_place]
+                    cat_b = arr[cat_b_place+1]
+                    cat_b_place = cat_b_place + 1
             else:
                 cat_a = arr[cat_a_place]
                 cat_b = arr[cat_b_place]

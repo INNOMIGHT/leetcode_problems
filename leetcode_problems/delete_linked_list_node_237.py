@@ -5,7 +5,7 @@ instead you will be given access to the node to be deleted directly.
 It is guaranteed that the node to be deleted is not a tail node in the list.
 """
 
-Definition for singly-linked list.
+# Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
         self.val = x
