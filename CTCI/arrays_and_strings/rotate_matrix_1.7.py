@@ -1,8 +1,10 @@
 # Solution 1.7
-
+import time
 class Solution:
-
+    
     def rotate_matrix(self, arr):
+        begin = time.time()
+
         n = len(arr[0])
         for i in range(n // 2):
             for j in range(i, n - i - 1):
@@ -11,7 +13,12 @@ class Solution:
                 arr[n - 1 - j][i] = arr[n - 1 - i][n - 1 - j]
                 arr[n - 1 - i][n - 1 - j] = arr[j][n - 1 - i]
                 arr[j][n - 1 - i] = temp
-        return arr
+        
+        time.sleep(1)
+        end = time.time()
+        runtime = end - begin
+        
+        return arr, runtime
 
 
 
