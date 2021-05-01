@@ -1,0 +1,29 @@
+A node is called a leaf node if it has no children.
+
+Trees vs Binary Trees
+A binary tree is a tree in which each node has up to two children.
+
+Binary Tree vs Binary Search Tree
+A Binary search tree is a binary tree in which every node fits a specific property.
+Property - (all left descendants <= n <= all right descendants)
+
+Complete Binary Trees
+Every node has zero or no children. No node with 1 child.
+
+Perfect Binary Tree
+Both full and complete binary tree results in perfect binary tree.
+No of nodes - 2^k - 1
+
+Binary Tree Traversal
+
+Inorder Traversal-
+Print - Left -> Root -> right
+
+Pre-Order Traversal -
+Root -> Left -> right
+
+Post-Order Traversal
+Left -> Right -> Root
+
+Binary Heaps - 
+
