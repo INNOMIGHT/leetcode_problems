@@ -48,7 +48,7 @@ class TaxesList:
 
     def __init__(self):
         self.taxes = {
-            "Service Tax": 15/100
+            "Service Tax": 15/100,
             "VAT": 10/100
         }
     
@@ -98,10 +98,13 @@ class CalculateBill(TakeOrder, TaxesList):
 
 class BurgurShop:
 
-    TakeOrder.take_order()
-    print("Here is your order, fresh and delicious!")
-    print("I hope you enjoyed your meal. Here is the bill for your order. Thank you." + CalculateBill.bill_calculator())
+    def initialize(self):
+        TakeOrder.take_order
+        bill = CalculateBill.bill_calculator
+        print("Here is your order, fresh and delicious!")
+        print("I hope you enjoyed your meal. Here is the bill for your order. Thank you. " + str(bill))
 
 
-
+initialize_shop = BurgurShop()
+initialize_shop.initialize()
     

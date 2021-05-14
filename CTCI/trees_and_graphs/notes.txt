@@ -26,4 +26,24 @@ Post-Order Traversal
 Left -> Right -> Root
 
 Binary Heaps - 
+Min Heap - Complete Binary Tree where each node is smaller than its children.
+Root is the smallest element in the tree.
+
+Tries (Prefix Trees):
+A trie is a variant of an n-ary tree in which characters are stored at each node.
+Each path down the tree may represent a word.
+
+Graphs
+A tree is actually a type of graph but all not all graphs are trees.
+A tree is a connected graph without cycles.
+A graph is a collection of nodes with edges between some of them.
+
+2 Types to represent graphs-
+Adjacency List (Dictionary/List)
+Adjacency Matrix (NxN Array with boolean values)
+
+Graph Search-
+2 most common ways-
+Depth First Search
+Breadth First Search
 
