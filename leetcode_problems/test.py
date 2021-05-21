@@ -1,18 +1,9 @@
-class Shape():
+my_dict = {
+    1: 4,
+    2: 3,
+    6: 7,
+}
 
-    def __init__(self):
-        print("I am in init")
-
-    def draw_shape(self):
-        pass
-    
-    def set_color(self):
-        pass
-
-class Circle(Shape):
-    def draw_shape(self):
-        print("Draw Circle")
-
-c = Circle()
-c.draw_shape()
-c.set_color()
+for key, value in my_dict.items():
+    if max(my_dict.values()) == value:
+        print(key)

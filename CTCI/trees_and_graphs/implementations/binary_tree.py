@@ -48,8 +48,20 @@ def inorder_traversal(tree):
         inorder_traversal(tree.get_left_child())
         print(tree.get_root_val())
         inorder_traversal(tree.get_right_child())
-    
 
-print(inorder_traversal(tree))
+
+def level_order(tree):
+    if tree:
+        queue = []
+        queue.append(tree)
+        while queue != []:
+            element = queue.pop(0)
+            print(element.key)
+            if element.left_child:
+                queue.append(element.left_child)
+            if element.right_child:
+                queue.append(element.right_child)
+
+            
 
         
