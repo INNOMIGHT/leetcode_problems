@@ -54,14 +54,29 @@ def level_order(tree):
     if tree:
         queue = []
         queue.append(tree)
-        while queue != []:
-            element = queue.pop(0)
-            print(element.key)
-            if element.left_child:
-                queue.append(element.left_child)
-            if element.right_child:
-                queue.append(element.right_child)
+        while queue != []:  
+            count = len(queue)
+            while count > 0:
+                element = queue.pop(0)
+                print(element.key, end=" ")
+                if element.left_child:
+                    queue.append(element.left_child)
+                if element.right_child:
+                    queue.append(element.right_child)
+                count -= 1
+            print("")
 
-            
-
-        
+# level_order(tree)
+inorder_traversal(tree)
+def successor(tree, target):
+    if tree:
+        successor(tree.left_child, target)
+        tree.root
+        successor(tree.right_child, target)
+    if tree.root.val == target:
+        if tree.root.left_child:
+            return tree.root.left_child
+        elif tree.root.right_child:
+            return tree.root.right_child
+        else:
+            return tree.root.parent

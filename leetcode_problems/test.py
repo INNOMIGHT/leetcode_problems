@@ -1,9 +1,5 @@
-my_dict = {
-    1: 4,
-    2: 3,
-    6: 7,
-}
-
-for key, value in my_dict.items():
-    if max(my_dict.values()) == value:
-        print(key)
+subsets = []
+arr = [1, 2, 3, 4]
+for i in range(len(arr)):
+    for j in range(i):
+        subsets.append(nums[j:i])

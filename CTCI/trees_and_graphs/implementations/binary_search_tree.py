@@ -11,6 +11,7 @@ class BinarySearchTree:
 
     def __init__(self):
         self.root = None
+        self.traversal = []
 
 
     def insert(self, val):
@@ -126,9 +127,17 @@ class BinarySearchTree:
     def _print_tree(self, curr_node):
         if curr_node is not None:
             self._print_tree(curr_node.left_child)
-            print(curr_node.val)
+            self.traversal.append(curr_node.val)
             self._print_tree(curr_node.right_child)
-
+    
+    def successor(self, target):
+        self._print_tree(self.root)
+        print(self.traversal)
+        for i in range(len(self.traversal)):
+            if self.traversal[i] == target:
+                if i == len(self.traversal):
+                    print("It has no successor")
+                print(self.traversal[i+1])
         
 
 tree = BinarySearchTree()
@@ -137,4 +146,8 @@ tree.insert(6)
 tree.insert(2)
 tree.insert(4)
 tree.insert(1)
-tree.print_tree()
+
+tree.successor(4)
+
+
+
