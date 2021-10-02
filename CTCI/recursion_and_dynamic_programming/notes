@@ -36,3 +36,17 @@ before for the same capacity.
 
 
 -----------------------------------------------------------------------------------------------------
+
+Knapsack Recursively (Not Dynamic Programming) -
+1. Select Base Case - (Think of the smallest valid input)
+2. Create a choice diagram - 
+    Here choice diagram will be like-
+    If the item weight is less than capacity (it can fit in bag), we have 2 choices -
+    a> Either select the item (put it in bag), or
+    b> Discard the item so the bag capacity remains same
+    If the item weight is greater than capacity (item cannot fit), we have only 1 choice -
+    a> Discard the item as it cannot fit. (capacity remains same)
+3. Code for the base case and the choice diagram.
+
+------------------------------------------------------------------------------------------------------
+
